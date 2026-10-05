@@ -1,0 +1,19 @@
+# Build output and IDE state
+build/
+.gradle/
+.kotlin/
+.idea/
+*.iml
+captures/
+.cxx/
+.externalNativeBuild/
+
+# Machine-local and secret files
+local.properties
+keystore.properties
+*.jks
+*.keystore
+
+# Source material kept outside version control (images are bundled in app/src/main/assets/months)
+imagini/
+Calendar_Ortodox_date_si_iconite/

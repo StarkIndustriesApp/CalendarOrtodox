@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Foreground layer of icon.svg, converted shape by shape (circles/ellipses as arcs,
+  objectBoundingBox gradients resolved to absolute coordinates).
+  Scaled to 85% around the center so the halo stays inside the adaptive-icon safe zone.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+    <group
+        android:pivotX="512"
+        android:pivotY="512"
+        android:scaleX="0.85"
+        android:scaleY="0.85">
+
+        <!-- halo with cross -->
+        <path android:pathData="M250,430a262,262 0,1 0,524 0a262,262 0,1 0,-524 0Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="radial" android:centerX="512" android:centerY="403.8" android:gradientRadius="288.2">
+                    <item android:offset="0" android:color="#FFFFE9A3" />
+                    <item android:offset="0.6" android:color="#FFF2C650" />
+                    <item android:offset="1" android:color="#FFC58F22" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:pathData="M250,430a262,262 0,1 0,524 0a262,262 0,1 0,-524 0Z"
+            android:strokeColor="#FF9C6B12"
+            android:strokeWidth="10" />
+        <path
+            android:pathData="M276,430a236,236 0,1 0,472 0a236,236 0,1 0,-472 0Z"
+            android:strokeAlpha="0.55"
+            android:strokeColor="#FFFFF3C8"
+            android:strokeWidth="4" />
+        <path
+            android:fillColor="#FFB0161C"
+            android:pathData="M478,170 L546,170 L536,300 L488,300 Z"
+            android:strokeColor="#FF7A0A0F"
+            android:strokeWidth="5" />
+        <path
+            android:fillColor="#FFB0161C"
+            android:pathData="M252,396 L252,464 L380,454 L380,406 Z"
+            android:strokeColor="#FF7A0A0F"
+            android:strokeWidth="5" />
+        <path
+            android:fillColor="#FFB0161C"
+            android:pathData="M772,396 L772,464 L644,454 L644,406 Z"
+            android:strokeColor="#FF7A0A0F"
+            android:strokeWidth="5" />
+
+        <!-- back hair -->
+        <path android:pathData="M512,245 C400,245 352,330 352,430 C352,540 340,640 300,720 L724,720 C684,640 672,540 672,430 C672,330 624,245 512,245 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="512" android:startY="245" android:endX="512" android:endY="720">
+                    <item android:offset="0" android:color="#FF5A3519" />
+                    <item android:offset="1" android:color="#FF3A200D" />
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- shoulders / robes -->
+        <path android:pathData="M190,1024 C200,820 300,735 420,705 L604,705 C724,735 824,820 834,1024 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="512" android:startY="705" android:endX="512" android:endY="1024">
+                    <item android:offset="0" android:color="#FFC41D24" />
+                    <item android:offset="1" android:color="#FF8E0E14" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#FFE8B84A"
+            android:pathData="M500,712 L470,1024 L440,1024 L468,712 Z" />
+        <path android:pathData="M600,700 C720,730 830,820 834,1024 L600,1024 C640,900 650,800 600,700 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="600" android:startY="700" android:endX="834" android:endY="1024">
+                    <item android:offset="0" android:color="#FF2D63B8" />
+                    <item android:offset="1" android:color="#FF173F80" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:pathData="M600,700 C650,800 640,900 600,1024"
+            android:strokeColor="#FF0F2C5C"
+            android:strokeWidth="6" />
+
+        <!-- neck -->
+        <path
+            android:fillColor="#FFD49A6A"
+            android:pathData="M462,600 L562,600 L572,715 C540,735 484,735 452,715 Z" />
+
+        <!-- front hair strands over shoulders -->
+        <path android:pathData="M372,430 C368,560 352,660 318,750 C350,760 392,745 410,720 C420,640 420,540 420,470 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="369" android:startY="430" android:endX="369" android:endY="757">
+                    <item android:offset="0" android:color="#FF5A3519" />
+                    <item android:offset="1" android:color="#FF3A200D" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:pathData="M652,430 C656,560 672,660 706,750 C674,760 632,745 614,720 C604,640 604,540 604,470 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="655" android:startY="430" android:endX="655" android:endY="757">
+                    <item android:offset="0" android:color="#FF5A3519" />
+                    <item android:offset="1" android:color="#FF3A200D" />
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- face -->
+        <path android:pathData="M400,455a112,142 0,1 0,224 0a112,142 0,1 0,-224 0Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="512" android:startY="313" android:endX="512" android:endY="597">
+                    <item android:offset="0" android:color="#FFF1C79C" />
+                    <item android:offset="1" android:color="#FFDCA577" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <!-- ears hint -->
+        <path
+            android:fillColor="#FFD9A072"
+            android:pathData="M386,465a16,30 0,1 0,32 0a16,30 0,1 0,-32 0Z" />
+        <path
+            android:fillColor="#FFD9A072"
+            android:pathData="M606,465a16,30 0,1 0,32 0a16,30 0,1 0,-32 0Z" />
+
+        <!-- top hair with center part -->
+        <path android:pathData="M398,430 C398,320 452,278 512,278 C572,278 626,320 626,430 C612,372 580,334 518,322 L512,340 L506,322 C444,334 412,372 398,430 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="512" android:startY="278" android:endX="512" android:endY="430">
+                    <item android:offset="0" android:color="#FF5A3519" />
+                    <item android:offset="1" android:color="#FF3A200D" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M512,282 C508,300 508,318 512,340"
+            android:strokeColor="#FF2A1608"
+            android:strokeWidth="4" />
+
+        <!-- beard + mustache -->
+        <path android:pathData="M402,470 C404,560 440,640 512,668 C584,640 620,560 622,470 C608,520 590,548 560,556 C540,540 484,540 464,556 C434,548 416,520 402,470 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="512" android:startY="470" android:endX="512" android:endY="668">
+                    <item android:offset="0" android:color="#FF5A3519" />
+                    <item android:offset="1" android:color="#FF3A200D" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#FF4A2A12"
+            android:pathData="M458,548 C480,528 506,532 512,540 C518,532 544,528 566,548 C546,556 528,556 512,550 C496,556 478,556 458,548 Z" />
+
+        <!-- smile (slight smirk) -->
+        <path
+            android:pathData="M478,576 C494,594 528,596 552,572"
+            android:strokeColor="#FF8A3A2A"
+            android:strokeLineCap="round"
+            android:strokeWidth="7" />
+        <path
+            android:fillColor="#FFA8483A"
+            android:pathData="M478,577 C494,590 528,592 552,573 C536,600 492,600 478,577 Z" />
+
+        <!-- nose -->
+        <path
+            android:pathData="M512,452 C506,482 500,502 494,512 C504,518 518,518 528,512"
+            android:strokeColor="#FFB5764C"
+            android:strokeLineCap="round"
+            android:strokeWidth="5" />
+
+        <!-- cheek blush -->
+        <path
+            android:fillAlpha="0.35"
+            android:fillColor="#FFE88A73"
+            android:pathData="M426,515a26,14 0,1 0,52 0a26,14 0,1 0,-52 0Z" />
+        <path
+            android:fillAlpha="0.45"
+            android:fillColor="#FFE88A73"
+            android:pathData="M546,505a28,15 0,1 0,56 0a28,15 0,1 0,-56 0Z" />
+
+        <!-- left eye (open) -->
+        <path
+            android:fillColor="#FFFFFAF0"
+            android:pathData="M432,438 C450,420 482,420 496,440 C480,452 450,454 432,438 Z" />
+        <path
+            android:fillColor="#FF5B3415"
+            android:pathData="M453,438a12,12 0,1 0,24 0a12,12 0,1 0,-24 0Z" />
+        <path
+            android:fillColor="#FF1C0E05"
+            android:pathData="M459,438a6,6 0,1 0,12 0a6,6 0,1 0,-12 0Z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M465.5,434a3.5,3.5 0,1 0,7 0a3.5,3.5 0,1 0,-7 0Z" />
+        <path
+            android:pathData="M432,438 C450,420 482,420 496,440"
+            android:strokeColor="#FF2A1608"
+            android:strokeLineCap="round"
+            android:strokeWidth="5" />
+        <path
+            android:pathData="M424,404 C446,386 480,386 500,400"
+            android:strokeColor="#FF3A200D"
+            android:strokeLineCap="round"
+            android:strokeWidth="9" />
+
+        <!-- right eye (winking) -->
+        <path
+            android:pathData="M528,442 C544,454 574,456 594,440"
+            android:strokeColor="#FF2A1608"
+            android:strokeLineCap="round"
+            android:strokeWidth="6" />
+        <path
+            android:pathData="M530,442 L522,434 M594,440 L604,432"
+            android:strokeColor="#FF2A1608"
+            android:strokeLineCap="round"
+            android:strokeWidth="4" />
+        <path
+            android:pathData="M524,414 C546,404 580,404 602,416"
+            android:strokeColor="#FF3A200D"
+            android:strokeLineCap="round"
+            android:strokeWidth="9" />
+
+        <!-- wink sparkle -->
+        <path
+            android:fillColor="#FFFFF3C8"
+            android:pathData="M676,352 L686,384 L718,394 L686,404 L676,436 L666,404 L634,394 L666,384 Z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M670,394a6,6 0,1 0,12 0a6,6 0,1 0,-12 0Z" />
+    </group>
+</vector>

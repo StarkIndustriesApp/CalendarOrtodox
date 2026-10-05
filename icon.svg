@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#b3161c"/>
+      <stop offset="1" stop-color="#5c060b"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#ffe9a3"/>
+      <stop offset="0.6" stop-color="#f2c650"/>
+      <stop offset="1" stop-color="#c58f22"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1c79c"/>
+      <stop offset="1" stop-color="#dca577"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a3519"/>
+      <stop offset="1" stop-color="#3a200d"/>
+    </linearGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c41d24"/>
+      <stop offset="1" stop-color="#8e0e14"/>
+    </linearGradient>
+    <linearGradient id="mantle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d63b8"/>
+      <stop offset="1" stop-color="#173f80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- halo with cross -->
+  <circle cx="512" cy="430" r="262" fill="url(#halo)"/>
+  <circle cx="512" cy="430" r="262" fill="none" stroke="#9c6b12" stroke-width="10"/>
+  <circle cx="512" cy="430" r="236" fill="none" stroke="#fff3c8" stroke-opacity=".55" stroke-width="4"/>
+  <g fill="#b0161c" stroke="#7a0a0f" stroke-width="5">
+    <path d="M478 170 L546 170 L536 300 L488 300 Z"/>
+    <path d="M252 396 L252 464 L380 454 L380 406 Z"/>
+    <path d="M772 396 L772 464 L644 454 L644 406 Z"/>
+  </g>
+
+  <!-- back hair -->
+  <path d="M512 245 C400 245 352 330 352 430 C352 540 340 640 300 720 L724 720 C684 640 672 540 672 430 C672 330 624 245 512 245 Z" fill="url(#hair)"/>
+
+  <!-- shoulders / robes -->
+  <path d="M190 1024 C200 820 300 735 420 705 L604 705 C724 735 824 820 834 1024 Z" fill="url(#robe)"/>
+  <path d="M500 712 L470 1024 L440 1024 L468 712 Z" fill="#e8b84a"/>
+  <path d="M600 700 C720 730 830 820 834 1024 L600 1024 C640 900 650 800 600 700 Z" fill="url(#mantle)"/>
+  <path d="M600 700 C650 800 640 900 600 1024" fill="none" stroke="#0f2c5c" stroke-width="6"/>
+
+  <!-- neck -->
+  <path d="M462 600 L562 600 L572 715 C540 735 484 735 452 715 Z" fill="#d49a6a"/>
+
+  <!-- front hair strands over shoulders -->
+  <path d="M372 430 C368 560 352 660 318 750 C350 760 392 745 410 720 C420 640 420 540 420 470 Z" fill="url(#hair)"/>
+  <path d="M652 430 C656 560 672 660 706 750 C674 760 632 745 614 720 C604 640 604 540 604 470 Z" fill="url(#hair)"/>
+
+  <!-- face -->
+  <ellipse cx="512" cy="455" rx="112" ry="142" fill="url(#skin)"/>
+  <!-- ears hint -->
+  <ellipse cx="402" cy="465" rx="16" ry="30" fill="#d9a072"/>
+  <ellipse cx="622" cy="465" rx="16" ry="30" fill="#d9a072"/>
+
+  <!-- top hair with center part -->
+  <path d="M398 430 C398 320 452 278 512 278 C572 278 626 320 626 430 C612 372 580 334 518 322 L512 340 L506 322 C444 334 412 372 398 430 Z" fill="url(#hair)"/>
+  <path d="M512 282 C508 300 508 318 512 340" stroke="#2a1608" stroke-width="4" fill="none"/>
+
+  <!-- beard + mustache -->
+  <path d="M402 470 C404 560 440 640 512 668 C584 640 620 560 622 470 C608 520 590 548 560 556 C540 540 484 540 464 556 C434 548 416 520 402 470 Z" fill="url(#hair)"/>
+  <path d="M458 548 C480 528 506 532 512 540 C518 532 544 528 566 548 C546 556 528 556 512 550 C496 556 478 556 458 548 Z" fill="#4a2a12"/>
+
+  <!-- smile (slight smirk) -->
+  <path d="M478 576 C494 594 528 596 552 572" fill="none" stroke="#8a3a2a" stroke-width="7" stroke-linecap="round"/>
+  <path d="M478 577 C494 590 528 592 552 573 C536 600 492 600 478 577 Z" fill="#a8483a"/>
+
+  <!-- nose -->
+  <path d="M512 452 C506 482 500 502 494 512 C504 518 518 518 528 512" fill="none" stroke="#b5764c" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- cheek blush -->
+  <ellipse cx="452" cy="515" rx="26" ry="14" fill="#e88a73" opacity=".35"/>
+  <ellipse cx="574" cy="505" rx="28" ry="15" fill="#e88a73" opacity=".45"/>
+
+  <!-- left eye (open) -->
+  <path d="M432 438 C450 420 482 420 496 440 C480 452 450 454 432 438 Z" fill="#fffaf0"/>
+  <circle cx="465" cy="438" r="12" fill="#5b3415"/>
+  <circle cx="465" cy="438" r="6" fill="#1c0e05"/>
+  <circle cx="469" cy="434" r="3.5" fill="#fff"/>
+  <path d="M432 438 C450 420 482 420 496 440" fill="none" stroke="#2a1608" stroke-width="5" stroke-linecap="round"/>
+  <path d="M424 404 C446 386 480 386 500 400" fill="none" stroke="#3a200d" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- right eye (winking) -->
+  <path d="M528 442 C544 454 574 456 594 440" fill="none" stroke="#2a1608" stroke-width="6" stroke-linecap="round"/>
+  <path d="M530 442 L522 434 M594 440 L604 432" stroke="#2a1608" stroke-width="4" stroke-linecap="round"/>
+  <path d="M524 414 C546 404 580 404 602 416" fill="none" stroke="#3a200d" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- wink sparkle -->
+  <path d="M676 352 L686 384 L718 394 L686 404 L676 436 L666 404 L634 394 L666 384 Z" fill="#fff3c8"/>
+  <circle cx="676" cy="394" r="6" fill="#ffffff"/>
+</svg>
