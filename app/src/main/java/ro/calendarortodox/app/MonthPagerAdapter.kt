@@ -1,4 +1,4 @@
-package ro.ungu.unguisreligious
+package ro.calendarortodox.app
 
 import android.graphics.Color
 import android.view.ViewGroup

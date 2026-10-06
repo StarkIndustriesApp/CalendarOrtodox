@@ -1,4 +1,4 @@
-package ro.ungu.unguisreligious
+package ro.calendarortodox.app
 
 import java.time.YearMonth
 import java.time.temporal.ChronoUnit

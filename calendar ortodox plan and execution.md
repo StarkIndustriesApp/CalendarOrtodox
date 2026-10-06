@@ -148,3 +148,19 @@ Not started yet. Steps to plan in the next session:
 ### Known OS behavior (not app bugs)
 - Android shows a one-time "Viewing full screen" hint on first launch
 - An edge swipe briefly shows the system bars, which then hide again automatically
+
+---
+
+## 5. Update 2026-10-06: Google Play preparation (see `google play release plan.md`)
+
+Done:
+- **Renamed** the app to **Calendar Ortodox** and changed the package to **`ro.calendarortodox.app`** (sources now in `app/src/*/java/ro/calendarortodox/app/`; Gradle root project `CalendarOrtodox`; theme `Theme.CalendarOrtodox`; PhotoView markers now `CalendarOrtodox:`).
+- **New icon:** the user's new `icon.svg` (Theotokos with the Child). It is rendered with headless Microsoft Edge to PNG foregrounds in `mipmap-*dpi/ic_launcher_foreground.png` (scaled to 80% for the round mask); the red gradient background stays a vector.
+- **Builds:** `app-release.aab` (for Play) and `app-release.apk`, versionCode 1 / versionName 1.0, signed with the upload key (`unguisreligious.jks`, certificate CN=UnguIsReligious; users never see it with Play App Signing).
+- **Store assets** in `store/`: `icon-512.png`, `feature-graphic.png` (1024×500), two screenshots padded to 2:1 (Play's limit), `listing-ro.md` (Romanian texts), `play-console-steps.md` (full Console guide, form answers, tester invite, production-access answers).
+- **Privacy policy:** `docs/privacy.html` + `docs/index.html`, to be served by GitHub Pages at https://starkindustriesapp.github.io/CalendarOrtodox/privacy.html. Public contact email: danielbring.writes@gmail.com.
+
+Pick up next:
+1. Install the new app on the phone and uninstall the old `ro.ungu.unguisreligious` (the phone was not detected over USB on 2026-10-06).
+2. Enable GitHub Pages (Settings → Pages → `main` / `/docs`).
+3. Follow `store/play-console-steps.md`: create the app, fill in the forms, run the closed test (≥12 testers × 14 days), then apply for production.

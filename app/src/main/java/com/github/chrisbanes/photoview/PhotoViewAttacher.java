@@ -14,8 +14,8 @@
  limitations under the License.
  */
 /*
- * Vendored into UnguIsReligious from PhotoView 2.3.0 (Apache License 2.0, see LICENSE-PhotoView.txt).
- * Local modifications are marked with "UnguIsReligious:".
+ * Vendored into CalendarOrtodox from PhotoView 2.3.0 (Apache License 2.0, see LICENSE-PhotoView.txt).
+ * Local modifications are marked with "CalendarOrtodox:".
  */
 package com.github.chrisbanes.photoview;
 
@@ -66,9 +66,9 @@ public class PhotoViewAttacher implements View.OnTouchListener,
 
     private boolean mAllowParentInterceptOnEdge = true;
     private boolean mBlockParentIntercept = false;
-    // UnguIsReligious: true from the second finger down until the gesture ends.
+    // CalendarOrtodox: true from the second finger down until the gesture ends.
     private boolean mMultiTouch = false;
-    // UnguIsReligious: a gesture that ends this close to minimum scale snaps back to it.
+    // CalendarOrtodox: a gesture that ends this close to minimum scale snaps back to it.
     private static final float SNAP_TO_MIN_FACTOR = 1.05f;
 
     private ImageView mImageView;
@@ -125,7 +125,7 @@ public class PhotoViewAttacher implements View.OnTouchListener,
              * the edge, aka 'overscrolling', let the parent take over).
              */
             ViewParent parent = mImageView.getParent();
-            // UnguIsReligious: never hand a multi-finger gesture to the parent pager.
+            // CalendarOrtodox: never hand a multi-finger gesture to the parent pager.
             if (mAllowParentInterceptOnEdge && !mScaleDragDetector.isScaling() && !mBlockParentIntercept
                     && !mMultiTouch) {
                 if (mHorizontalScrollEdge == HORIZONTAL_EDGE_BOTH
@@ -234,7 +234,7 @@ public class PhotoViewAttacher implements View.OnTouchListener,
             @Override
             public boolean onDoubleTap(MotionEvent ev) {
                 try {
-                    // UnguIsReligious: toggle between the normal view and medium zoom
+                    // CalendarOrtodox: toggle between the normal view and medium zoom
                     // instead of cycling min -> medium -> max.
                     float scale = getScale();
                     float x = ev.getX();
@@ -357,7 +357,7 @@ public class PhotoViewAttacher implements View.OnTouchListener,
                     cancelFling();
                     break;
                 case MotionEvent.ACTION_POINTER_DOWN:
-                    // UnguIsReligious: a second finger means pinch, so keep the
+                    // CalendarOrtodox: a second finger means pinch, so keep the
                     // parent pager from turning it into a page swipe.
                     mMultiTouch = true;
                     ViewParent pinchParent = v.getParent();
@@ -369,7 +369,7 @@ public class PhotoViewAttacher implements View.OnTouchListener,
                 case MotionEvent.ACTION_UP:
                     mMultiTouch = false;
                     // If the user has zoomed less than min scale, zoom back
-                    // to min scale. UnguIsReligious: also snap back when the
+                    // to min scale. CalendarOrtodox: also snap back when the
                     // gesture ends barely above min scale.
                     if (getScale() < mMinScale
                             || (getScale() > mMinScale && getScale() < mMinScale * SNAP_TO_MIN_FACTOR)) {

@@ -14,8 +14,8 @@
  limitations under the License.
  */
 /*
- * Vendored into UnguIsReligious from PhotoView 2.3.0 (Apache License 2.0, see LICENSE-PhotoView.txt).
- * Local modifications are marked with "UnguIsReligious:".
+ * Vendored into CalendarOrtodox from PhotoView 2.3.0 (Apache License 2.0, see LICENSE-PhotoView.txt).
+ * Local modifications are marked with "CalendarOrtodox:".
  */
 package com.github.chrisbanes.photoview;
 

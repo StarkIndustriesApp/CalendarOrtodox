@@ -7,7 +7,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="false"
-        android:theme="@style/Theme.UnguIsReligious">
+        android:theme="@style/Theme.CalendarOrtodox">
 
         <activity
             android:name=".MainActivity"

@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UnguIsReligious"
+rootProject.name = "CalendarOrtodox"
 include(":app")

@@ -11,12 +11,12 @@ val keystoreProperties = Properties().apply {
 }
 
 android {
-    namespace = "ro.ungu.unguisreligious"
+    namespace = "ro.calendarortodox.app"
     compileSdk = 37
     buildToolsVersion = "36.0.0"
 
     defaultConfig {
-        applicationId = "ro.ungu.unguisreligious"
+        applicationId = "ro.calendarortodox.app"
         minSdk = 34
         targetSdk = 37
         versionCode = 1

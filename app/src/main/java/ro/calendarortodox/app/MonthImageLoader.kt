@@ -1,4 +1,4 @@
-package ro.ungu.unguisreligious
+package ro.calendarortodox.app
 
 import android.content.res.AssetManager
 import android.graphics.Bitmap

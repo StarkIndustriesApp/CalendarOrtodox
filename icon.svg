@@ -4,97 +4,122 @@
       <stop offset="0" stop-color="#b3161c"/>
       <stop offset="1" stop-color="#5c060b"/>
     </radialGradient>
-    <radialGradient id="halo" cx="50%" cy="45%" r="55%">
-      <stop offset="0" stop-color="#ffe9a3"/>
-      <stop offset="0.6" stop-color="#f2c650"/>
-      <stop offset="1" stop-color="#c58f22"/>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe7a0"/>
+      <stop offset=".45" stop-color="#e9bc55"/>
+      <stop offset="1" stop-color="#b98424"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="45%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#fff0bf"/>
+      <stop offset=".6" stop-color="#f0c75a"/>
+      <stop offset="1" stop-color="#c8922a"/>
     </radialGradient>
+    <linearGradient id="maph" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8e2a1a"/>
+      <stop offset="1" stop-color="#4a100a"/>
+    </linearGradient>
     <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f1c79c"/>
-      <stop offset="1" stop-color="#dca577"/>
+      <stop offset="0" stop-color="#e3b384"/>
+      <stop offset="1" stop-color="#c08a5c"/>
     </linearGradient>
-    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#5a3519"/>
-      <stop offset="1" stop-color="#3a200d"/>
+    <linearGradient id="child" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd877"/>
+      <stop offset=".5" stop-color="#e9a83a"/>
+      <stop offset="1" stop-color="#b8701c"/>
     </linearGradient>
-    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#c41d24"/>
-      <stop offset="1" stop-color="#8e0e14"/>
-    </linearGradient>
-    <linearGradient id="mantle" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2d63b8"/>
-      <stop offset="1" stop-color="#173f80"/>
-    </linearGradient>
+    <symbol id="star" viewBox="-10 -10 20 20">
+      <path d="M0 -10 L2.4 -2.4 L10 0 L2.4 2.4 L0 10 L-2.4 2.4 L-10 0 L-2.4 -2.4 Z" fill="#f3cf6e"/>
+    </symbol>
+    <clipPath id="arch">
+      <path d="M182 1024 V360 C182 200 330 112 512 112 C694 112 842 200 842 360 V1024 Z"/>
+    </clipPath>
   </defs>
 
-  <!-- background -->
   <rect width="1024" height="1024" fill="url(#bg)"/>
 
-  <!-- halo with cross -->
-  <circle cx="512" cy="430" r="262" fill="url(#halo)"/>
-  <circle cx="512" cy="430" r="262" fill="none" stroke="#9c6b12" stroke-width="10"/>
-  <circle cx="512" cy="430" r="236" fill="none" stroke="#fff3c8" stroke-opacity=".55" stroke-width="4"/>
-  <g fill="#b0161c" stroke="#7a0a0f" stroke-width="5">
-    <path d="M478 170 L546 170 L536 300 L488 300 Z"/>
-    <path d="M252 396 L252 464 L380 454 L380 406 Z"/>
-    <path d="M772 396 L772 464 L644 454 L644 406 Z"/>
+  <!-- gold arched panel -->
+  <path d="M182 1024 V360 C182 200 330 112 512 112 C694 112 842 200 842 360 V1024 Z" fill="url(#panel)"/>
+
+  <g clip-path="url(#arch)">
+    <!-- Mary's halo -->
+    <circle cx="452" cy="360" r="166" fill="url(#halo)" stroke="#a8761a" stroke-width="6"/>
+    <circle cx="452" cy="360" r="148" fill="none" stroke="#a8761a" stroke-opacity=".5" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+
+    <!-- maphorion -->
+    <path d="M452 214 C364 214 312 288 306 384 C300 476 272 560 214 640 C176 700 164 860 160 1024 L880 1024 C876 880 852 780 800 712 C732 626 640 560 606 414 C590 300 540 214 452 214 Z" fill="url(#maph)"/>
+    <!-- gold hem of the maphorion -->
+    <path d="M216 640 C272 560 300 476 306 384" fill="none" stroke="#e2b04a" stroke-width="9" stroke-linecap="round"/>
+    <!-- folds -->
+    <path d="M260 760 C300 820 330 900 340 1024" fill="none" stroke="#3a0b06" stroke-width="6" opacity=".6"/>
+    <path d="M330 640 C360 700 390 760 400 830" fill="none" stroke="#3a0b06" stroke-width="5" opacity=".5"/>
+
+    <!-- Mary's face (tilted to the Child) -->
+    <g transform="rotate(12 456 398)">
+      <path d="M372 482 C350 366 390 274 456 272 C522 274 562 366 540 482 C492 516 420 516 372 482 Z" fill="#1d2f5c"/>
+      <path d="M372 482 C350 366 390 274 456 272 C522 274 562 366 540 482" fill="none" stroke="#e2b04a" stroke-width="9" stroke-linecap="round"/>
+      <path d="M456 298 C512 298 534 350 530 410 C526 466 496 506 456 506 C416 506 386 466 382 410 C378 350 400 298 456 298 Z" fill="url(#skin)"/>
+      <!-- brows -->
+      <path d="M404 378 C420 366 440 366 450 374" fill="none" stroke="#4a2a12" stroke-width="5" stroke-linecap="round"/>
+      <path d="M464 374 C476 366 496 366 510 378" fill="none" stroke="#4a2a12" stroke-width="5" stroke-linecap="round"/>
+      <!-- almond eyes looking out -->
+      <path d="M408 398 C420 388 438 388 448 398 C438 406 420 406 408 398 Z" fill="#fbf2e2"/>
+      <circle cx="430" cy="398" r="7" fill="#3a200d"/>
+      <path d="M408 398 C420 388 438 388 448 398" fill="none" stroke="#2a1608" stroke-width="4" stroke-linecap="round"/>
+      <path d="M466 398 C476 388 494 388 506 398 C494 406 476 406 466 398 Z" fill="#fbf2e2"/>
+      <circle cx="486" cy="398" r="7" fill="#3a200d"/>
+      <path d="M466 398 C476 388 494 388 506 398" fill="none" stroke="#2a1608" stroke-width="4" stroke-linecap="round"/>
+      <!-- long nose -->
+      <path d="M458 382 C458 414 454 438 448 446 C456 452 466 452 472 446" fill="none" stroke="#8f5a34" stroke-width="4" stroke-linecap="round"/>
+      <!-- small mouth -->
+      <path d="M444 472 C452 468 464 468 472 472 C464 480 452 480 444 472 Z" fill="#9c3e30"/>
+      <ellipse cx="418" cy="440" rx="16" ry="9" fill="#d97a62" opacity=".28"/>
+      <ellipse cx="496" cy="440" rx="16" ry="9" fill="#d97a62" opacity=".28"/>
+    </g>
+
+    <!-- stars on forehead and shoulder -->
+    <use href="#star" x="434" y="226" width="36" height="36"/>
+    <use href="#star" x="236" y="666" width="40" height="40"/>
+
+    <!-- Child's halo with cross -->
+    <circle cx="640" cy="540" r="96" fill="url(#halo)" stroke="#a8761a" stroke-width="6"/>
+    <g fill="#9e1a14" stroke="#6a0c08" stroke-width="3">
+      <path d="M622 446 L658 446 L652 482 L628 482 Z"/>
+      <path d="M734 522 L734 558 L700 552 L700 528 Z"/>
+      <path d="M546 522 L546 558 L580 552 L580 528 Z"/>
+    </g>
+
+    <!-- Child's golden robe -->
+    <path d="M582 600 C540 640 520 720 530 820 C600 856 720 856 790 820 C800 720 770 640 706 604 C666 622 620 622 582 600 Z" fill="url(#child)"/>
+    <path d="M620 616 C640 690 640 760 612 840" fill="none" stroke="#fff1b8" stroke-width="4" opacity=".8"/>
+    <path d="M690 620 C720 690 740 760 742 830" fill="none" stroke="#fff1b8" stroke-width="4" opacity=".7"/>
+    <path d="M660 640 C676 700 690 770 690 840" fill="none" stroke="#8a4f10" stroke-width="4" opacity=".6"/>
+
+    <!-- Mary's hand supporting the Child -->
+    <path d="M470 840 C500 798 560 786 624 806 C646 814 644 838 622 842 C590 850 562 856 540 874 C506 896 466 888 470 840 Z" fill="url(#skin)"/>
+    <path d="M560 822 C582 818 602 820 618 826" fill="none" stroke="#8f5a34" stroke-width="3" stroke-linecap="round"/>
+    <!-- Mary's sleeve -->
+    <path d="M372 870 C384 818 436 794 484 818 C496 850 482 888 446 906 C410 922 368 906 372 870 Z" fill="url(#maph)"/>
+    <path d="M484 818 C496 850 482 888 446 906" fill="none" stroke="#e2b04a" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Child's face -->
+    <circle cx="640" cy="548" r="54" fill="url(#skin)"/>
+    <path d="M588 540 C592 504 614 488 640 488 C668 488 690 504 692 540 C676 518 658 512 640 512 C622 512 604 518 588 540 Z" fill="#5a3519"/>
+    <path d="M616 548 C622 542 632 542 636 548 C632 552 622 552 616 548 Z" fill="#fbf2e2"/>
+    <circle cx="626" cy="548" r="4" fill="#3a200d"/>
+    <path d="M646 548 C650 542 660 542 666 548 C660 552 650 552 646 548 Z" fill="#fbf2e2"/>
+    <circle cx="656" cy="548" r="4" fill="#3a200d"/>
+    <path d="M641 552 C640 566 637 572 634 576 C639 579 645 579 648 576" fill="none" stroke="#8f5a34" stroke-width="3" stroke-linecap="round"/>
+    <path d="M632 590 C638 594 646 594 652 590" fill="none" stroke="#9c3e30" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Child holding a scroll -->
+    <g transform="rotate(-18 690 720)">
+      <rect x="660" y="690" width="26" height="70" rx="6" fill="#fff4dc" stroke="#a8761a" stroke-width="4"/>
+      <ellipse cx="673" cy="690" rx="13" ry="6" fill="#f1e2bd" stroke="#a8761a" stroke-width="4"/>
+      <path d="M684 716 C700 708 712 714 712 728 C712 742 698 748 684 742 Z" fill="url(#skin)"/>
+    </g>
   </g>
 
-  <!-- back hair -->
-  <path d="M512 245 C400 245 352 330 352 430 C352 540 340 640 300 720 L724 720 C684 640 672 540 672 430 C672 330 624 245 512 245 Z" fill="url(#hair)"/>
-
-  <!-- shoulders / robes -->
-  <path d="M190 1024 C200 820 300 735 420 705 L604 705 C724 735 824 820 834 1024 Z" fill="url(#robe)"/>
-  <path d="M500 712 L470 1024 L440 1024 L468 712 Z" fill="#e8b84a"/>
-  <path d="M600 700 C720 730 830 820 834 1024 L600 1024 C640 900 650 800 600 700 Z" fill="url(#mantle)"/>
-  <path d="M600 700 C650 800 640 900 600 1024" fill="none" stroke="#0f2c5c" stroke-width="6"/>
-
-  <!-- neck -->
-  <path d="M462 600 L562 600 L572 715 C540 735 484 735 452 715 Z" fill="#d49a6a"/>
-
-  <!-- front hair strands over shoulders -->
-  <path d="M372 430 C368 560 352 660 318 750 C350 760 392 745 410 720 C420 640 420 540 420 470 Z" fill="url(#hair)"/>
-  <path d="M652 430 C656 560 672 660 706 750 C674 760 632 745 614 720 C604 640 604 540 604 470 Z" fill="url(#hair)"/>
-
-  <!-- face -->
-  <ellipse cx="512" cy="455" rx="112" ry="142" fill="url(#skin)"/>
-  <!-- ears hint -->
-  <ellipse cx="402" cy="465" rx="16" ry="30" fill="#d9a072"/>
-  <ellipse cx="622" cy="465" rx="16" ry="30" fill="#d9a072"/>
-
-  <!-- top hair with center part -->
-  <path d="M398 430 C398 320 452 278 512 278 C572 278 626 320 626 430 C612 372 580 334 518 322 L512 340 L506 322 C444 334 412 372 398 430 Z" fill="url(#hair)"/>
-  <path d="M512 282 C508 300 508 318 512 340" stroke="#2a1608" stroke-width="4" fill="none"/>
-
-  <!-- beard + mustache -->
-  <path d="M402 470 C404 560 440 640 512 668 C584 640 620 560 622 470 C608 520 590 548 560 556 C540 540 484 540 464 556 C434 548 416 520 402 470 Z" fill="url(#hair)"/>
-  <path d="M458 548 C480 528 506 532 512 540 C518 532 544 528 566 548 C546 556 528 556 512 550 C496 556 478 556 458 548 Z" fill="#4a2a12"/>
-
-  <!-- smile (slight smirk) -->
-  <path d="M478 576 C494 594 528 596 552 572" fill="none" stroke="#8a3a2a" stroke-width="7" stroke-linecap="round"/>
-  <path d="M478 577 C494 590 528 592 552 573 C536 600 492 600 478 577 Z" fill="#a8483a"/>
-
-  <!-- nose -->
-  <path d="M512 452 C506 482 500 502 494 512 C504 518 518 518 528 512" fill="none" stroke="#b5764c" stroke-width="5" stroke-linecap="round"/>
-
-  <!-- cheek blush -->
-  <ellipse cx="452" cy="515" rx="26" ry="14" fill="#e88a73" opacity=".35"/>
-  <ellipse cx="574" cy="505" rx="28" ry="15" fill="#e88a73" opacity=".45"/>
-
-  <!-- left eye (open) -->
-  <path d="M432 438 C450 420 482 420 496 440 C480 452 450 454 432 438 Z" fill="#fffaf0"/>
-  <circle cx="465" cy="438" r="12" fill="#5b3415"/>
-  <circle cx="465" cy="438" r="6" fill="#1c0e05"/>
-  <circle cx="469" cy="434" r="3.5" fill="#fff"/>
-  <path d="M432 438 C450 420 482 420 496 440" fill="none" stroke="#2a1608" stroke-width="5" stroke-linecap="round"/>
-  <path d="M424 404 C446 386 480 386 500 400" fill="none" stroke="#3a200d" stroke-width="9" stroke-linecap="round"/>
-
-  <!-- right eye (winking) -->
-  <path d="M528 442 C544 454 574 456 594 440" fill="none" stroke="#2a1608" stroke-width="6" stroke-linecap="round"/>
-  <path d="M530 442 L522 434 M594 440 L604 432" stroke="#2a1608" stroke-width="4" stroke-linecap="round"/>
-  <path d="M524 414 C546 404 580 404 602 416" fill="none" stroke="#3a200d" stroke-width="9" stroke-linecap="round"/>
-
-  <!-- wink sparkle -->
-  <path d="M676 352 L686 384 L718 394 L686 404 L676 436 L666 404 L634 394 L666 384 Z" fill="#fff3c8"/>
-  <circle cx="676" cy="394" r="6" fill="#ffffff"/>
+  <!-- arch frame -->
+  <path d="M182 1024 V360 C182 200 330 112 512 112 C694 112 842 200 842 360 V1024" fill="none" stroke="#7a4e0c" stroke-width="10"/>
+  <path d="M200 1024 V362 C200 216 340 130 512 130 C684 130 824 216 824 362 V1024" fill="none" stroke="#fff0bf" stroke-opacity=".6" stroke-width="4"/>
 </svg>

@@ -1,4 +1,4 @@
-package ro.ungu.unguisreligious
+package ro.calendarortodox.app
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
