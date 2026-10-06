@@ -161,6 +161,7 @@ Done:
 - **Privacy policy:** `docs/privacy.html` + `docs/index.html`, to be served by GitHub Pages at https://starkindustriesapp.github.io/CalendarOrtodox/privacy.html. Public contact email: danielbring.writes@gmail.com.
 
 Pick up next:
-1. Install the new app on the phone and uninstall the old `ro.ungu.unguisreligious` (the phone was not detected over USB on 2026-10-06).
+1. ~~Install the new app on the phone~~ **Done 2026-10-06:** Calendar Ortodox (`ro.calendarortodox.app`) is installed on the Pixel 9 Pro and opens on the current month; the old `ro.ungu.unguisreligious` is uninstalled. (USB only worked with the phone plugged directly into the laptop, not through the Dell dock.)
+   - Note: the phone also has another Play app, `fusa.calendarortodox` (v1.7.6), by a different developer, so an app with a similar name already exists on Google Play. Store titles don't have to be unique, but the icon, feature graphic and description should make ours easy to tell apart.
 2. Enable GitHub Pages (Settings → Pages → `main` / `/docs`).
 3. Follow `store/play-console-steps.md`: create the app, fill in the forms, run the closed test (≥12 testers × 14 days), then apply for production.
