@@ -165,3 +165,9 @@ Pick up next:
    - Note: the phone also has another Play app, `fusa.calendarortodox` (v1.7.6), by a different developer, so an app with a similar name already exists on Google Play. Store titles don't have to be unique, but the icon, feature graphic and description should make ours easy to tell apart.
 2. Enable GitHub Pages (Settings → Pages → `main` / `/docs`).
 3. Follow `store/play-console-steps.md`: create the app, fill in the forms, run the closed test (≥12 testers × 14 days), then apply for production.
+
+## 6. Update 2026-10-07: final Play package name
+- When the app was created in the Play Console, the package name was set to **`ro.calendarortodoxinclusivposturi.app`**. `applicationId` in `app/build.gradle.kts` now matches it. This ID is **permanent** once the first bundle is uploaded.
+- `namespace` and the Kotlin source package stay `ro.calendarortodox.app` (internal only, never shown to users; it doesn't need to match the applicationId).
+- The privacy page shows the new package name.
+- On the phone, the test install `ro.calendarortodox.app` is replaced by `ro.calendarortodoxinclusivposturi.app`.

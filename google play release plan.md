@@ -10,7 +10,7 @@ The app (currently "UnguIsReligious", package `ro.ungu.unguisreligious`) is buil
 | Topic | Decision |
 |---|---|
 | App name / label | **Calendar Ortodox** |
-| Package ID | **`ro.calendarortodox.app`** (permanent after the first upload) |
+| Package ID | **`ro.calendarortodoxinclusivposturi.app`** (applicationId, set in the Play Console on 2026-10-07; permanent after the first upload). The Kotlin source package/namespace stays `ro.calendarortodox.app` |
 | Play account | Personal, created after 13 Nov 2023 → **closed test with ≥12 testers for 14 consecutive days** is required |
 | Testers | User has 12+ people |
 | New icon | User provides a new square **SVG** in the project folder |

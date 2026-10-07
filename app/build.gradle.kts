@@ -16,7 +16,7 @@ android {
     buildToolsVersion = "36.0.0"
 
     defaultConfig {
-        applicationId = "ro.calendarortodox.app"
+        applicationId = "ro.calendarortodoxinclusivposturi.app"
         minSdk = 34
         targetSdk = 37
         versionCode = 1
